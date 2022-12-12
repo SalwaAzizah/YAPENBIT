@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app" div>
+        <p class="sukakhati">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, assumenda accusantium dicta magnam ad porro optio exercitationem ullam voluptatum eius in repellat corporis laudantium nihil nam est saepe incidunt!
+        </p>
+        <p class="sukakhati">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quisquam sit asperiores fuga magni corporis. Facere ad possimus debitis nobis consequuntur minima odit impedit, qui, eum unde vitae et doloribus.
+        </p>
+        <p class="sukakhati">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus voluptatum ipsa ad quo dolorum fugiat dolores laudantium suscipit laboriosam architecto? Similique, illum incidunt. Modi magnam eum deserunt est repellendus temporibus.
+        </p>
+
+        <script>
+    let tutorial = document.getElementById("app");
+    let nameclass = document.getElementsByClassName("sukakhati");
+    tutorial.innerText = "SALWA";
+    tutorial.style.backgroundColor="grey";
+    tutorial.style.textAlign= "center";
+    tutorial.style.padding="20px";
+
+    
+    console.log("nameclass :", nameclass);
+    setInterval(function(){
+    nameclass[0].style.color="red";
+    nameclass[1].style.color="green";
+    nameclass[2].style.color="yellow";
+
+    setTimeout(function(){
+    nameclass[0].style.color="black";
+    nameclass[1].style.color="black";
+    nameclass[2 ].style.color="black";
+    }, 300);
+    }, 700);
+   
+    var judul = document.createElement("h1");
+    judul.textContent="tambahkan saya";
+    document.body.append(judul);
+    
+    let hapus=document.getElementById("Judul");
+    hapus.remove();
+</script>
+    
+</body>
+</html>
